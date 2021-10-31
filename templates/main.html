@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>GREENEYEDBOYS</title>
+		<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="static/css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+	
+		<!-- GNB-->
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="main.html">Configuration</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                        <li><a class="dropdown-item" href="activitylog.html">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="login.html" data-toggle="modal" data-target="#logoutModal">
+                            Logout
+                            </a>
+						</li>
+						
+						
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+		
+		<!-- LNB -->
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+						    <div class="sb-sidenav-menu-heading"> Standard Edition</div>
+							
+                            <div class="sb-sidenav-menu-heading"> 실시간 스트리밍</div>
+							
+							
+                           <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"></div>
+                                영상확인
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="laser1.html">GRW001</a>
+                                    <a class="nav-link" href="laser2.html">GRW002</a>
+									<a class="nav-link" href="laser3.html">GRW003</a>
+									<a class="nav-link" href="laser4.html">GRW004</a>
+									<a class="nav-link" href="laser5.html">GRW005</a>
+                                </nav>
+                            </div>
+							
+							
+							<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"></div>
+                                수동제어
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="laserCon1.html">GRW001</a>
+                                    <a class="nav-link" href="laserCon2.html">GRW002</a>
+									<a class="nav-link" href="laserCon3.html">GRW003</a>
+									<a class="nav-link" href="laserCon4.html">GRW004</a>
+									<a class="nav-link" href="laserCon5.html">GRW005</a>
+                                </nav>
+                            </div>
+										
+                            <div class="sb-sidenav-menu-heading"> 정보확인 </div>
+                            <a class="nav-link" href="inform.html">
+                                <div class="sb-nav-link-icon"></div>
+                                레이저카메라 정보
+                            </a>
+                            <a class="nav-link" href="history.html">
+                                <div class="sb-nav-link-icon"></div>
+                                사용히스토리
+                            </a>
+                        </div>
+                    </div>
+					
+					<!-- LNB Footer-->
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        AD, SSO등으로 연동가능
+                    </div>
+					
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+					<!-- 컨텐츠 보여지는 바디 부분--><main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">사용방법</h1>
+                        <br>
+						
+						<h3>영상확인방법 </h3>
+						<div class="card mb-4">
+                            <div class="card-body">
+                                <p class="mb-0">
+                                   1. 영상확인 카테고리를 클릭한다. <br>
+								   2. 확인하고자 하는 카메라를 선택한다. <br>
+								   3. Contents Page의 실시간 스트리밍을 확인한다.
+                                </p>
+                            </div>
+                        </div>
+						
+						
+						<br><br>
+                        
+						<h3>수동제어방법(PRO EDITION만 가능) </h3>
+						<div class="card mb-4">
+                            <div class="card-body">
+                                <p class="mb-0">
+                                   1. 수동제어 카테고리를 클릭한다. <br>
+								   2. 제어하고자 하는 카메라를 선택한다. <br>
+								   3. 제어권을 회수한다. <br>
+								   4. 제어가 끝났으면 제어권을 다시 전달한다.
+                                </p>
+                            </div>
+                        </div>
+						
+						
+						
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area me-1"></i>
+                                        일별 발견한 새 마리 수 (PRO EDITION)
+                                    </div>
+                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        시간별 발견된 새 빈도 수 (PRO EDITION)
+                                    </div>
+                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                카메라 설치 및 점검 정보 (PRO EDITION)
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>기기번호</th>
+                                            <th>설치위치</th>
+                                            <th>위도</th>
+                                            <th>경도</th>
+                                            <th>설치날짜</th>
+                                            <th>마지막점검</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>	<td>GRW001</td>	<td>경상북도 의성군 안평면</td>	<td>36.586130</td>	<td>128.774986</td>	<td>07.01</td>	<td>10.01</td>	</tr>
+<tr>	<td>GRW002</td>	<td>경상북도 의성군 안평면</td>	<td>36.586131</td>	<td>128.774987</td>	<td>07.02</td>	<td>10.02</td>	</tr>
+<tr>	<td>GRW003</td>	<td>경상북도 의성군 안평면</td>	<td>36.586132</td>	<td>128.774988</td>	<td>07.03</td>	<td>10.03</td>	</tr>
+<tr>	<td>GRW004</td>	<td>경상북도 의성군 안평면</td>	<td>36.586133</td>	<td>128.774989</td>	<td>07.04</td>	<td>10.04</td>	</tr>
+<tr>	<td>GRW005</td>	<td>경상북도 의성군 안평면</td>	<td>36.586134</td>	<td>128.774990</td>	<td>07.05</td>	<td>10.05</td>	</tr>
+<tr>	<td>GRW006</td>	<td>경상북도 의성군 안평면</td>	<td>36.586135</td>	<td>128.774991</td>	<td>07.06</td>	<td>10.06</td>	</tr>
+<tr>	<td>GRW007</td>	<td>경상북도 의성군 안평면</td>	<td>36.586136</td>	<td>128.774992</td>	<td>07.07</td>	<td>10.07</td>	</tr>
+<tr>	<td>GRW008</td>	<td>경상북도 의성군 안평면</td>	<td>36.586137</td>	<td>128.774993</td>	<td>07.08</td>	<td>10.08</td>	</tr>
+<tr>	<td>GRW009</td>	<td>경상북도 의성군 안평면</td>	<td>36.586138</td>	<td>128.774994</td>	<td>07.09</td>	<td>10.09</td>	</tr>
+<tr>	<td>GRW010</td>	<td>경상북도 의성군 안평면</td>	<td>36.586139</td>	<td>128.774995</td>	<td>07.10</td>	<td>10.10</td>	</tr>
+<tr>	<td>GRW011</td>	<td>경상북도 의성군 안평면</td>	<td>36.586140</td>	<td>128.774996</td>	<td>07.11</td>	<td>10.11</td>	</tr>
+<tr>	<td>GRW012</td>	<td>경상북도 의성군 안평면</td>	<td>36.586141</td>	<td>128.774997</td>	<td>07.12</td>	<td>10.12</td>	</tr>
+<tr>	<td>GRW013</td>	<td>경상북도 의성군 안평면</td>	<td>36.586142</td>	<td>128.774998</td>	<td>07.13</td>	<td>10.13</td>	</tr>
+<tr>	<td>GRW014</td>	<td>경상북도 의성군 안평면</td>	<td>36.586143</td>	<td>128.774999</td>	<td>07.14</td>	<td>10.14</td>	</tr>
+<tr>	<td>GRW015</td>	<td>경상북도 의성군 안평면</td>	<td>36.586144</td>	<td>128.775000</td>	<td>07.15</td>	<td>10.15</td>	</tr>
+<tr>	<td>GRW016</td>	<td>경상북도 의성군 안평면</td>	<td>36.586145</td>	<td>128.775001</td>	<td>07.16</td>	<td>10.16</td>	</tr>
+<tr>	<td>GRW017</td>	<td>경상북도 의성군 안평면</td>	<td>36.586146</td>	<td>128.775002</td>	<td>07.17</td>	<td>10.17</td>	</tr>
+<tr>	<td>GRW018</td>	<td>경상북도 의성군 안평면</td>	<td>36.586147</td>	<td>128.775003</td>	<td>07.18</td>	<td>10.18</td>	</tr>
+<tr>	<td>GRW019</td>	<td>경상북도 의성군 안평면</td>	<td>36.586148</td>	<td>128.775004</td>	<td>07.19</td>	<td>10.19</td>	</tr>
+<tr>	<td>GRW020</td>	<td>경상북도 의성군 안평면</td>	<td>36.586149</td>	<td>128.775005</td>	<td>07.20</td>	<td>10.20</td>	</tr>
+<tr>	<td>GRW021</td>	<td>경상북도 의성군 안평면</td>	<td>36.586150</td>	<td>128.775006</td>	<td>07.21</td>	<td>10.21</td>	</tr>
+<tr>	<td>GRW022</td>	<td>경상북도 의성군 안평면</td>	<td>36.586151</td>	<td>128.775007</td>	<td>07.22</td>	<td>10.22</td>	</tr>
+<tr>	<td>GRW023</td>	<td>경상북도 의성군 안평면</td>	<td>36.586152</td>	<td>128.775008</td>	<td>07.23</td>	<td>10.23</td>	</tr>
+<tr>	<td>GRW024</td>	<td>경상북도 의성군 안평면</td>	<td>36.586153</td>	<td>128.775009</td>	<td>07.24</td>	<td>10.24</td>	</tr>
+<tr>	<td>GRW025</td>	<td>경상북도 의성군 안평면</td>	<td>36.586154</td>	<td>128.775010</td>	<td>07.25</td>	<td>10.25</td>	</tr>
+<tr>	<td>GRW026</td>	<td>경상북도 의성군 안평면</td>	<td>36.586155</td>	<td>128.775011</td>	<td>07.26</td>	<td>10.26</td>	</tr>
+<tr>	<td>GRW027</td>	<td>경상북도 의성군 안평면</td>	<td>36.586156</td>	<td>128.775012</td>	<td>07.27</td>	<td>10.27</td>	</tr>
+<tr>	<td>GRW028</td>	<td>경상북도 의성군 안평면</td>	<td>36.586157</td>	<td>128.775013</td>	<td>07.28</td>	<td>10.28</td>	</tr>
+<tr>	<td>GRW029</td>	<td>경상북도 의성군 안평면</td>	<td>36.586158</td>	<td>128.775014</td>	<td>07.29</td>	<td>10.29</td>	</tr>
+<tr>	<td>GRW030</td>	<td>경상북도 의성군 안평면</td>	<td>36.586159</td>	<td>128.775015</td>	<td>07.30</td>	<td>10.30</td>	</tr>
+<tr>	<td>GRW031</td>	<td>경상북도 의성군 안평면</td>	<td>36.586160</td>	<td>128.775016</td>	<td>07.31</td>	<td>10.31</td>	</tr>
+<tr>	<td>GRW032</td>	<td>경상북도 의성군 안평면</td>	<td>36.586161</td>	<td>128.775017</td>	<td>08.01</td>	<td>11.01</td>	</tr>
+<tr>	<td>GRW033</td>	<td>경상북도 의성군 안평면</td>	<td>36.586162</td>	<td>128.775018</td>	<td>08.02</td>	<td>11.02</td>	</tr>
+<tr>	<td>GRW034</td>	<td>경상북도 의성군 안평면</td>	<td>36.586163</td>	<td>128.775019</td>	<td>08.03</td>	<td>11.03</td>	</tr>
+<tr>	<td>GRW035</td>	<td>경상북도 의성군 안평면</td>	<td>36.586164</td>	<td>128.775020</td>	<td>08.04</td>	<td>11.04</td>	</tr>
+<tr>	<td>GRW036</td>	<td>경상북도 의성군 안평면</td>	<td>36.586165</td>	<td>128.775021</td>	<td>08.05</td>	<td>11.05</td>	</tr>
+<tr>	<td>GRW037</td>	<td>경상북도 의성군 안평면</td>	<td>36.586166</td>	<td>128.775022</td>	<td>08.06</td>	<td>11.06</td>	</tr>
+<tr>	<td>GRW038</td>	<td>경상북도 의성군 안평면</td>	<td>36.586167</td>	<td>128.775023</td>	<td>08.07</td>	<td>11.07</td>	</tr>
+<tr>	<td>GRW039</td>	<td>경상북도 의성군 안평면</td>	<td>36.586168</td>	<td>128.775024</td>	<td>08.08</td>	<td>11.08</td>	</tr>
+<tr>	<td>GRW040</td>	<td>경상북도 의성군 안평면</td>	<td>36.586169</td>	<td>128.775025</td>	<td>08.09</td>	<td>11.09</td>	</tr>
+<tr>	<td>GRW041</td>	<td>경상북도 의성군 안평면</td>	<td>36.586170</td>	<td>128.775026</td>	<td>08.10</td>	<td>11.10</td>	</tr>
+<tr>	<td>GRW042</td>	<td>경상북도 의성군 안평면</td>	<td>36.586171</td>	<td>128.775027</td>	<td>08.11</td>	<td>11.11</td>	</tr>
+<tr>	<td>GRW043</td>	<td>경상북도 의성군 안평면</td>	<td>36.586172</td>	<td>128.775028</td>	<td>08.12</td>	<td>11.12</td>	</tr>
+<tr>	<td>GRW044</td>	<td>경상북도 의성군 안평면</td>	<td>36.586173</td>	<td>128.775029</td>	<td>08.13</td>	<td>11.13</td>	</tr>
+<tr>	<td>GRW045</td>	<td>경상북도 의성군 안평면</td>	<td>36.586174</td>	<td>128.775030</td>	<td>08.14</td>	<td>11.14</td>	</tr>
+<tr>	<td>GRW046</td>	<td>경상북도 의성군 안평면</td>	<td>36.586175</td>	<td>128.775031</td>	<td>08.15</td>	<td>11.15</td>	</tr>
+<tr>	<td>GRW047</td>	<td>경상북도 의성군 안평면</td>	<td>36.586176</td>	<td>128.775032</td>	<td>08.16</td>	<td>11.16</td>	</tr>
+<tr>	<td>GRW048</td>	<td>경상북도 의성군 안평면</td>	<td>36.586177</td>	<td>128.775033</td>	<td>08.17</td>	<td>11.17</td>	</tr>
+<tr>	<td>GRW049</td>	<td>경상북도 의성군 안평면</td>	<td>36.586178</td>	<td>128.775034</td>	<td>08.18</td>	<td>11.18</td>	</tr>
+<tr>	<td>GRW050</td>	<td>경상북도 의성군 안평면</td>	<td>36.586179</td>	<td>128.775035</td>	<td>08.19</td>	<td>11.19</td>	</tr>
+<tr>	<td>GRW051</td>	<td>경상북도 의성군 안평면</td>	<td>36.586180</td>	<td>128.775036</td>	<td>08.20</td>	<td>11.20</td>	</tr>
+<tr>	<td>GRW052</td>	<td>경상북도 의성군 안평면</td>	<td>36.586181</td>	<td>128.775037</td>	<td>08.21</td>	<td>11.21</td>	</tr>
+<tr>	<td>GRW053</td>	<td>경상북도 의성군 안평면</td>	<td>36.586182</td>	<td>128.775038</td>	<td>08.22</td>	<td>11.22</td>	</tr>
+<tr>	<td>GRW054</td>	<td>경상북도 의성군 안평면</td>	<td>36.586183</td>	<td>128.775039</td>	<td>08.23</td>	<td>11.23</td>	</tr>
+<tr>	<td>GRW055</td>	<td>경상북도 의성군 안평면</td>	<td>36.586184</td>	<td>128.775040</td>	<td>08.24</td>	<td>11.24</td>	</tr>
+<tr>	<td>GRW056</td>	<td>경상북도 의성군 안평면</td>	<td>36.586185</td>	<td>128.775041</td>	<td>08.25</td>	<td>11.25</td>	</tr>
+<tr>	<td>GRW057</td>	<td>경상북도 의성군 안평면</td>	<td>36.586186</td>	<td>128.775042</td>	<td>08.26</td>	<td>11.26</td>	</tr>
+<tr>	<td>GRW058</td>	<td>경상북도 의성군 안평면</td>	<td>36.586187</td>	<td>128.775043</td>	<td>08.27</td>	<td>11.27</td>	</tr>
+<tr>	<td>GRW059</td>	<td>경상북도 의성군 안평면</td>	<td>36.586188</td>	<td>128.775044</td>	<td>08.28</td>	<td>11.28</td>	</tr>
+<tr>	<td>GRW060</td>	<td>경상북도 의성군 안평면</td>	<td>36.586189</td>	<td>128.775045</td>	<td>08.29</td>	<td>11.29</td>	</tr>
+<tr>	<td>GRW061</td>	<td>경상북도 의성군 안평면</td>	<td>36.586190</td>	<td>128.775046</td>	<td>08.30</td>	<td>11.30</td>	</tr>
+<tr>	<td>GRW062</td>	<td>경상북도 의성군 안평면</td>	<td>36.586191</td>	<td>128.775047</td>	<td>08.31</td>	<td>12.01</td>	</tr>
+<tr>	<td>GRW063</td>	<td>경상북도 의성군 안평면</td>	<td>36.586192</td>	<td>128.775048</td>	<td>09.01</td>	<td>12.02</td>	</tr>
+<tr>	<td>GRW064</td>	<td>경상북도 의성군 안평면</td>	<td>36.586193</td>	<td>128.775049</td>	<td>09.02</td>	<td>12.03</td>	</tr>
+<tr>	<td>GRW065</td>	<td>경상북도 의성군 안평면</td>	<td>36.586194</td>	<td>128.775050</td>	<td>09.03</td>	<td>12.04</td>	</tr>
+<tr>	<td>GRW066</td>	<td>경상북도 의성군 안평면</td>	<td>36.586195</td>	<td>128.775051</td>	<td>09.04</td>	<td>12.05</td>	</tr>
+<tr>	<td>GRW067</td>	<td>경상북도 의성군 안평면</td>	<td>36.586196</td>	<td>128.775052</td>	<td>09.05</td>	<td>12.06</td>	</tr>
+<tr>	<td>GRW068</td>	<td>경상북도 의성군 안평면</td>	<td>36.586197</td>	<td>128.775053</td>	<td>09.06</td>	<td>12.07</td>	</tr>
+<tr>	<td>GRW069</td>	<td>경상북도 의성군 안평면</td>	<td>36.586198</td>	<td>128.775054</td>	<td>09.07</td>	<td>12.08</td>	</tr>
+<tr>	<td>GRW070</td>	<td>경상북도 의성군 안평면</td>	<td>36.586199</td>	<td>128.775055</td>	<td>09.08</td>	<td>12.09</td>	</tr>
+<tr>	<td>GRW071</td>	<td>경상북도 의성군 안평면</td>	<td>36.586200</td>	<td>128.775056</td>	<td>09.09</td>	<td>12.10</td>	</tr>
+<tr>	<td>GRW072</td>	<td>경상북도 의성군 안평면</td>	<td>36.586201</td>	<td>128.775057</td>	<td>09.10</td>	<td>12.11</td>	</tr>
+<tr>	<td>GRW073</td>	<td>경상북도 의성군 안평면</td>	<td>36.586202</td>	<td>128.775058</td>	<td>09.11</td>	<td>12.12</td>	</tr>
+
+										
+										
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+               
+                    <div class="container-fluid px-4">
+                        
+						
+   
+ 			
+						
+						<!-- 바디콘텐츠 여기까지 -->
+						
+						
+                        <div style="height: 20vh"></div>
+						
+						<!--스크롤 끝 -->
+                        <div class="card mb-4"></div>
+                    </div>
+                </main>
+				
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; 2021 임베디드소프트웨어 경진대회 GREENEYEDBOYS </div>
+                       
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="static/js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="static/assets/demo/chart-area-demo.js"></script>
+        <script src="static/assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="static/js/datatables-simple-demo.js"></script>
+    </body>
+</html>
